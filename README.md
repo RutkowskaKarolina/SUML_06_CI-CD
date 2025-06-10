@@ -25,5 +25,6 @@ From training to evaluation, the entire process will be automated using GitHub a
 | Model                  | Accuracy | F1 Score |
 |------------------------|----------|----------|
 | RandomForestClassifier | 93.0%    | 90.0%    |
+
 ![Results](Results/model_results.png)
 
