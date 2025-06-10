@@ -28,6 +28,7 @@ jobs:
       - name: Evaluation
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CML_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: make eval
 
       - name: Update Branch
