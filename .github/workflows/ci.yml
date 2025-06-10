@@ -1,4 +1,4 @@
-name: CI SUML
+name: Continuous Integration
 on:
   push:
     branches: [ "main" ]
