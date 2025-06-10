@@ -22,5 +22,8 @@ From training to evaluation, the entire process will be automated using GitHub a
 ![Piepline](image/img.png)
 
 ## Results
+| Model                  | Accuracy | F1 Score |
+|------------------------|----------|----------|
+| RandomForestClassifier | 93.0%    | 90.0%    |
 ![Results](Results/model_results.png)
 
