@@ -8,7 +8,7 @@ from sklearn.preprocessing import OrdinalEncoder, StandardScaler
 from sklearn.metrics import accuracy_score, f1_score
 import matplotlib.pyplot as plt
 from sklearn.metrics import ConfusionMatrixDisplay, confusion_matrix
-from skops.io._persist import get_untrusted_types, load
+from skops.io import load, get_untrusted_types
 import skops.io as sio
 
 
@@ -65,6 +65,5 @@ plt.savefig("Results/model_results.png", dpi=120)
 sio.dump(pipe, "Model/drug_pipeline.skops")
 
 # You can just load the entire pipeline, and it will work out of the box without processing your data or making edits to the code
-trusted_types = get_untrusted_types()
-
-load("Model/drug_pipeline.skops", trusted=trusted_types)
+trusted = get_untrusted_types(file="Model/drug_pipeline.skops")
+load("Model/drug_pipeline.skops", trusted=trusted)
